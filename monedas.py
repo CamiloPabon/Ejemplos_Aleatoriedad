@@ -1,3 +1,6 @@
+"""Suponga que lanza una moneda ideal 10 veces y usted ha apostado a sacar cara. ¿Cuál es la
+probabilidad de que acierte 0,1,2,3 … 10 veces?"""
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt

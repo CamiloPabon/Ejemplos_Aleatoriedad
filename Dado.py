@@ -1,3 +1,6 @@
+"""En un juego se lanzan dos dados ideales, y se suman los puntos. Gana la persona que acerté a la
+suma. ¿A qué número sería adecuado apostar?"""
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt

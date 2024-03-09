@@ -1,19 +1,19 @@
-"""Suponga que está jugando parqués y está a 1 casilla de ganar. ¿Cuál es la probabilidad de que
-gane en menos de 6 turnos? """
+"""Un jugador de futbol tiene una probabilidad de acierto del 80% al momento de cobrar un
+penalti. ¿Cuál es la probabilidad de que marque por primera vez solo hasta el quinto penalti?"""
 
 import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-N = 200
-turnos = np.array([0,1,2,3,4,5,6])
-contador = np.array([0,0,0,0,0,0,0])
+N = 20000
+turnos = np.array([0,1,2,3,4,5])
+contador = np.array([0,0,0,0,0,0])
 fr_relativa = np.zeros_like(contador)
 
 for i in range(0,N):
-    for j in range(0,6):
-        dado = random.randint(1,6)
-        if dado == 1:
+    for j in range(0,5):
+        dado = random.randint(4,5)
+        if dado != 5:
             contador[j] += 1
             break
 
